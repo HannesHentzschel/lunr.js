@@ -79,7 +79,7 @@ lunr.utils.warn = (function (global) {
       console.warn(message)
     }
   }
-})(this)
+})(window)
 
 /**
  * Convert an object to a string.
