@@ -1,3 +1,4 @@
+"use strict";
 /**
  * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 1.0.0
  * Copyright (C) 2017 Oliver Nightingale
@@ -2042,7 +2043,7 @@ lunr.TokenStore.prototype.toJSON = function () {
       // Browser globals (root is window)
       root.lunr = factory()
     }
-  }(this, function () {
+  }(window, function () {
     /**
      * Just return a value to define the module export.
      * This example returns an object, but the module
